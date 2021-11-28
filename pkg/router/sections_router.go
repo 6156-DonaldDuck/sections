@@ -7,15 +7,15 @@ import (
 
 	"github.com/6156-DonaldDuck/sections/pkg/config"
 	"github.com/6156-DonaldDuck/sections/pkg/model"
+	"github.com/6156-DonaldDuck/sections/pkg/router/middleware"
 	"github.com/6156-DonaldDuck/sections/pkg/service"
-	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 )
 
 func InitRouter() {
 	r := gin.Default()
-	r.Use(cors.Default())
+	r.Use(middleware.CORSMiddleware())
 
 	//r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	// users

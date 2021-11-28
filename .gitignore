@@ -149,8 +149,5 @@ Temporary Items
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-# ignore config file
-conf.yaml
-
 # vscode
 .vscode
